@@ -2553,10 +2553,6 @@ var direct = 'DIRECT;';
 var hasOwnProperty = Object.hasOwnProperty;
 
 function FindProxyForURL(url, host) {
-    if (host == "mail.google.com") {
-        return "PROXY 104.224.161.30:25";
-    }
-
     var suffix;
     var pos = host.lastIndexOf('.');
     while(1) {
