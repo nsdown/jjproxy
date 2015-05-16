@@ -2562,6 +2562,8 @@ function FindProxyForURL(url, host) {
         if (suffix == "360.cn")
             if (url.indexOf('http://') == 0)
                 return "PROXY ns.liruqi.info:80";
+        if (suffix == "sharktel.hk") 
+            return direct;
         if (hasOwnProperty.call(domains, suffix)) {
             return proxy;
         }
