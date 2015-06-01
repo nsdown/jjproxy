@@ -632,7 +632,8 @@ var domains = {
   "fanswong.com": 1, 
   "fanyue.info": 1, 
   "fapdu.com": 1, 
-  "farwestchina.com": 1, 
+  "farwestchina.com": 1,
+  "fastly.net":1, 
   "fastpic.ru": 1, 
   "faststone.org": 1, 
   "favorious.com": 1, 
@@ -2563,8 +2564,6 @@ function FindProxyForURL(url, host) {
             if (url.indexOf('http://') == 0)
                 return "PROXY ns.liruqi.info:80";
         if (hasOwnProperty.call(domains, suffix)) {
-            if (host.endsWith("sharktel.hk"))
-                return direct;
             return proxy;
         }
         if (pos <= 0) {
